@@ -1,5 +1,13 @@
 # Spring Boot JWT Authentication Projesi
+###  Kullanım Akışı
 
+1. Kullanıcı `/register` ile kayıt olur
+2. `/authenticate` ile giriş yapar ve iki token alır
+3. Access token ile API'lere erişir
+4. Access token süresi dolduğunda `/refreshToken` ile yeni token alır
+5. Refresh token süresi dolduğunda tekrar giriş yapması gerekir
+
+Bu proje, JWT tabanlı kimlik doğrulama sisteminin temel özelliklerini içeren, eğitim amaçlı geliştirilmiş bir örnek uygulamadır. Spring Security ve JWT kullanarak güvenli bir kimlik doğrulama sistemi oluşturulmuştur.
 ## 🔐 Özellikler ve Kullanım
 
 ### 1. Kimlik Doğrulama Sistemi
@@ -57,12 +65,4 @@ POST /refreshToken
   }
   ```
 
-### 3. Kullanım Akışı
 
-1. Kullanıcı `/register` ile kayıt olur
-2. `/authenticate` ile giriş yapar ve iki token alır
-3. Access token ile API'lere erişir
-4. Access token süresi dolduğunda `/refreshToken` ile yeni token alır
-5. Refresh token süresi dolduğunda tekrar giriş yapması gerekir
-
-Bu proje, JWT tabanlı kimlik doğrulama sisteminin temel özelliklerini içeren, eğitim amaçlı geliştirilmiş bir örnek uygulamadır. Spring Security ve JWT kullanarak güvenli bir kimlik doğrulama sistemi oluşturulmuştur.
